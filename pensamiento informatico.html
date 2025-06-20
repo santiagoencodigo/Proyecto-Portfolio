@@ -61,69 +61,6 @@
                  <!-- ¿Qué haces con tu tiempo? Escribir codigo es un acto en donde no hay limites. -->
             </p>
         </section>  
-        
-        <section>
-            <div class="container">
-                <h1>Prompt Game Did With GitHub Copilot Chat</h1>
-                <button id="startButton">Start Game</button>
-                <div id="promptContainer" class="hidden">
-                    <p id="promptText"></p>
-                    <div id="answersContainer"></div>
-                </div>
-            </div>
-            
-            <script>
-                    const prompts = [
-                        {
-                            text: "You find a treasure chest. What do you do?",
-                            answers: [
-                                { text: "Open it", outcome: "You find gold!" },
-                                { text: "Leave it", outcome: "You walk away, wondering what could have been." },
-                                { text: "Take it with you", outcome: "It's too heavy, you can't carry it far." }
-                            ]
-                        },
-                        {
-                            text: "A wild animal appears. What do you do?",
-                            answers: [
-                                { text: "Fight", outcome: "You defeat the animal and gain experience." },
-                                { text: "Run", outcome: "You escape safely." },
-                                { text: "Feed it", outcome: "The animal becomes your friend." }
-                            ]
-                        }
-                    ];
-        
-                    document.getElementById('startButton').addEventListener('click', startGame);
-        
-                    function startGame() {
-                        document.getElementById('startButton').classList.add('hidden');
-                        const promptContainer = document.getElementById('promptContainer');
-                        promptContainer.classList.remove('hidden');
-        
-                        showPrompt();
-                    }
-        
-                    function showPrompt() {
-                        const prompt = prompts[Math.floor(Math.random() * prompts.length)];
-                        document.getElementById('promptText').innerText = prompt.text;
-        
-                        const answersContainer = document.getElementById('answersContainer');
-                        answersContainer.innerHTML = '';
-        
-                        prompt.answers.forEach(answer => {
-                            const button = document.createElement('button');
-                            button.innerText = answer.text;
-                            button.addEventListener('click', () => showOutcome(answer.outcome));
-                            answersContainer.appendChild(button);
-                        });
-                    }
-        
-                    function showOutcome(outcome) {
-                        alert(outcome);
-                        document.getElementById('startButton').classList.remove('hidden');
-                        document.getElementById('promptContainer').classList.add('hidden');
-                    }
-            </script>
-        </section>
     </body>
 
 </html>
