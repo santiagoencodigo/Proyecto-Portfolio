@@ -1,67 +1,81 @@
-<DOCTYPE! html />
-<html>
-
+<DOCTYPE! html/>
+<html lang="es">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfolio de Santiago Muñeton Hernandez/santiagoencodigo, un desarollador web.">
+        
+        <meta property="og:title" content="Portfolio de santiagoencodigo"/>
+        <meta property="og:description" content="Portfolio de Santiago Muñeton Hernandez/santiagoencodigo, un desarollador web que desea ser un fullstack developer.">
+        <meta property="og:image" content="./imagenesparamisprogramas/santiagoencodigo-chatgptimage.png">
+        <meta property="og:url" content="https://santiagoencodigo.com">
 
-        <title>pensamiento informatico 🧠💻</title>
-                
-        <script src="./js/pensamiento informatico.js"></script>
-        <link rel="stylesheet" href="./css/pensamiento informatico.css">      
+        <title>pensamiento informatico 🧠💻</title>              
+        <link rel="icon" type="image/png" href="./imagenesparamisprogramas/santiagoencodigo-chatgptimage.png">
+        <link rel="stylesheet" href="./css/pensamiento informatico.css">
+        <script src="./js/pensamiento informatico.js"></script>    
     </head>
     
     <body>
-        <nav>
+        <div class="container">
+            <div class="header">
+                <div class="logo">
+                    <img src="./imagenesparamisprogramas/escritura.PNG">
+                    <h1 id="title-santiagoencodigo">SANTIAGOENCODIGO</h1>
+                </div>
 
-        </nav>
+                <nav class="menu">
+                    <a href="#mokepon">Mokepon</a>
+                    <a href="#quien_soy">Quien Soy</a>
+                </nav>
+            </div>
 
-        <section id="santiagoencodigo">
-            <h1>En diciembre del año 2024 inicia todo:</h1>   
-            <span class="verde">"entre más pase el tiempo más se perfeccionará este espacio."</span>            
-
-            <p>
-                El proposito de este <strong>espacio digital</strong> <u>es hacer codigo sobre todos mis escritos fisicos y digitales</u>
-                <br>
-                complementando mis habilidades como programador y persona creando a <span class="verde">santiagoencodigo</span>
-                
-            </p> 
-  
-            <span id="spansantiagoencodigo"class="roboto">santiagoencodigo</span>  
-                <br>
-            <span id="parrafo-1">I'm Santiago Muñeton Hernandez Currently, I am studying HTML, CSS, and JavaScript. 🤖</span>
-                <br>
-            <span id="parrafo-2">Without experience in programming jobs, I love creating code, developing web pages. 👾</span>
-                <br>
-            <span id="parrafo-3">I enjoy exploring the internet and browsing through websites and content channels. 🖱⌨</span>
-
-            <p>
-                <span class="granverde">Minijuegos que he diseñado aprendiendo</span>
-                <br> <strong>Son algoritmos jugando con alerts y prompts para acostumbrarme a la programación básica.</strong> 🎮
+            <section id="santiagoencodigo">
+                <h1>En diciembre del año 2024 inicia todo:</h1>   
+                <span class="verde">"entre más pase el tiempo más se perfeccionará este espacio."</span>            
 
                 <p>
+                    El proposito de este <strong>espacio digital</strong> <u>es hacer codigo sobre todos mis escritos fisicos y digitales</u>
+                    <br>
+                    complementando mis habilidades como programador y persona creando a <span class="verde">santiagoencodigo</span>
+                    
+                </p> 
+    
+                <span id="spansantiagoencodigo"class="roboto">santiagoencodigo</span>  
+                    <br>
+                <span id="parrafo-1">I'm Santiago Muñeton Hernandez Currently, I am studying HTML, CSS, and JavaScript. 🤖</span>
+                    <br>
+                <span id="parrafo-2">Without experience in programming jobs, I love creating code, developing web pages. 👾</span>
+                    <br>
+                <span id="parrafo-3">I enjoy exploring the internet and browsing through websites and content channels. 🖱⌨</span>
 
-                <input type="radio" name="JuegosConJS" id="CuantaProbabilidadHayDe" />   
-                <label class="juegosConPrompts" for ="CuantaProbabilidadHayDe">Cuanta Probabilidad Hay De...</label>     
+                <p>
+                    <span class="granverde">Minijuegos que he diseñado aprendiendo</span>
+                    <br> <strong>Son algoritmos jugando con alerts y prompts para acostumbrarme a la programación básica.</strong> 🎮
 
-                <input type="radio" name="JuegosConJS" id="ProbabilidadConDirecciones" />
-                <label class="juegosConPrompts" for ="ProbabilidadConDirecciones">Cuanta Probabilidad Hay, Pero Con Direcciones.</label> 
+                    <p>
 
-                <input type="radio" name="JuegosConJS" id="PiedraPapeloTijera" />
-                <label class="juegosConPrompts" for ="PiedraPapeloTijera">Piedra, Papel o Tijera</label>
-        
+                    <input type="radio" name="JuegosConJS" id="CuantaProbabilidadHayDe" />   
+                    <label class="juegosConPrompts" for ="CuantaProbabilidadHayDe">Cuanta Probabilidad Hay De...</label>     
+
+                    <input type="radio" name="JuegosConJS" id="ProbabilidadConDirecciones" />
+                    <label class="juegosConPrompts" for ="ProbabilidadConDirecciones">Cuanta Probabilidad Hay, Pero Con Direcciones.</label> 
+
+                    <input type="radio" name="JuegosConJS" id="PiedraPapeloTijera" />
+                    <label class="juegosConPrompts" for ="PiedraPapeloTijera">Piedra, Papel o Tijera</label>
+            
+                    </p>
+
+                    <button id="boton-seleccion-juegoJS">Selecciona el juego</button>
+                    <!-- Tenemos que ir documentando todo por medio del atajo alt + shift + a -->
+                    <!-- ¿Realmente vale la pena escribir de forma física? Si. Pero yo deseo lograrlo por medio de mi computador -->
+                    <!-- Yo sólo tengo que escribir mis ideas por este formato y luego convertirlas en codigo. -->
+                    <!-- Hacer nada despues de las 5 hasta las 7:38 representa casi 3 horas de retraso en un dia de mi vida -->
+                    <!-- ¿Poder? ¿Dinero? ¿Amor? ¿Familia?  ¿Amigos?-->
+                    <!-- ¿Qué haces con tu tiempo? Escribir codigo es un acto en donde no hay limites. -->
                 </p>
-
-                <button id="boton-seleccion-juegoJS">Selecciona el juego</button>
-                <!-- Tenemos que ir documentando todo por medio del atajo alt + shift + a -->
-                <!-- ¿Realmente vale la pena escribir de forma física? Si. Pero yo deseo lograrlo por medio de mi computador -->
-                <!-- Yo sólo tengo que escribir mis ideas por este formato y luego convertirlas en codigo. -->
-                <!-- Hacer nada despues de las 5 hasta las 7:38 representa casi 3 horas de retraso en un dia de mi vida -->
-                <!-- ¿Poder? ¿Dinero? ¿Amor? ¿Familia?  ¿Amigos?-->
-                 <!-- ¿Qué haces con tu tiempo? Escribir codigo es un acto en donde no hay limites. -->
-            </p>
-        </section>  
+            </section>
+        </div>
     </body>
-
 </html>
 
