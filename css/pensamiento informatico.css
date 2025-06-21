@@ -160,6 +160,8 @@ input:checked + label {
     font-family: 'Poppins', sans-serif;
     color:black;
     font-size: 15px;
+    display: block;      /* Necesario para que funcione margin auto */
+    margin: 0 auto;      /* Centra horizontalmente */
 }
 
 #boton-seleccion-juegoJS:hover {
